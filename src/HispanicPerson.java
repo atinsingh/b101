@@ -3,6 +3,10 @@ public class HispanicPerson implements IPerson {
     String address;
     String ethinicity = "Hispanic";
 
+    public HispanicPerson(String name, String address, String ethinicity){
+        this(name,address);
+        this.ethinicity  = ethinicity;
+    }
     public HispanicPerson(String name, String address){
         this.address  = address;
         this.name = name;
